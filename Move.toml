@@ -1,0 +1,20 @@
+[package]
+name = "interface"
+version = "1.0.0"
+authors = []
+
+[addresses]
+test ="0x123"
+thalaswap_v2 = "0x7730cd28ee1cdc9e999336cbc430f99e7c44397c0aa77516f6f23a78559bb5"
+hyperion="0x8b4a2c4bb53857c718a04c020b98f8c2e1f99a68b0f57389a8bf5434cd22e05c"
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+[dependencies.dex]
+local ="./mock/hyperion"
+[dependencies.ThalaSwapV2]
+local="./mock/thala"
+[dev-dependencies]

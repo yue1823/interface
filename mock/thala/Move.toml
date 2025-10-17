@@ -1,0 +1,17 @@
+[package]
+name = "ThalaSwapV2"
+version = "1.0.0"
+authors = []
+
+[addresses]
+
+
+
+[dependencies.FixedPoint64]
+git = "https://github.com/ThalaLabs/fixed_point64.git"
+rev = "mainnet"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
