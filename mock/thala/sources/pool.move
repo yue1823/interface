@@ -1,4 +1,4 @@
-module thala::pool {
+module thalaswap_v2::pool {
     use aptos_std::object::{Object};
     struct Pool has key {}
 
