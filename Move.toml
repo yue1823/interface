@@ -4,7 +4,7 @@ version = "1.0.0"
 authors = []
 
 [addresses]
-test ="0x123"
+
 thalaswap_v2 = "0x7730cd28ee1cdc9e999336cbc430f99e7c44397c0aa77516f6f23a78559bb5"
 hyperion="0x8b4a2c4bb53857c718a04c020b98f8c2e1f99a68b0f57389a8bf5434cd22e05c"
 lending = "0xc6bc659f1649553c1a3fa05d9727433dc03843baac29473c817d06d39e7621ba"
