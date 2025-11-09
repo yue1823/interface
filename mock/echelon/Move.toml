@@ -3,7 +3,7 @@ name = 'Lending'
 version = '1.0.0'
 
 [addresses]
-lending="_"
+echelon="_"
 
 [dependencies.AptosFramework]
 git = "https://github.com/aptos-labs/aptos-framework.git"

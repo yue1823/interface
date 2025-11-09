@@ -1,6 +1,6 @@
-module lending::scripts{
+module echelon::scripts{
     use aptos_std::object::Object;
-    use lending::lending::Market;
+    use echelon::lending::Market;
 
     struct Notacoin {
         dummy_field: bool,

@@ -1,3 +1,3 @@
-module lending::lending{
+module echelon::lending{
     struct Market has key{}
 }
