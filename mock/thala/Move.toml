@@ -12,6 +12,6 @@ git = "https://github.com/ThalaLabs/fixed_point64.git"
 rev = "mainnet"
 
 [dependencies.AptosFramework]
-git = "https://github.com/aptos-labs/aptos-core.git"
+git = "https://github.com/aptos-labs/aptos-framework.git"
 rev = "mainnet"
-subdir = "aptos-move/framework/aptos-framework"
+subdir = "aptos-framework"
