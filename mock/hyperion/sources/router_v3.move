@@ -1,5 +1,5 @@
 module hyperion_dex::router_v3 {
-    use aptos_std::fungible_asset::FungibleAsset;
+    use aptos_std::fungible_asset::{FungibleAsset,Metadata};
     use aptos_std::object::Object;
     use aptos_std::option::{Option,none};
 
@@ -30,5 +30,20 @@ module hyperion_dex::router_v3 {
         _deadline: u64
     ): (Option<FungibleAsset>, Option<FungibleAsset>) {
         (none<FungibleAsset>(),none<FungibleAsset>())
+    }
+
+     #[view]
+    public fun optimal_liquidity_amounts(
+        _tick_lower_u32: u32,
+        _tick_upper_u32: u32,
+        _token_a: Object<Metadata>,
+        _token_b: Object<Metadata>,
+        _fee_tier: u8,
+        _amount_a_desired: u64,
+        _amount_b_desired: u64,
+        _amount_a_min: u64,
+        _amount_b_min: u64,
+    ): (u128, u64, u64) {
+        (0, 0, 0)
     }
 }
