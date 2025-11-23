@@ -1,4 +1,4 @@
-module hyperion::utils{
+module hyperion_dex::utils{
     use aptos_std::object::Object;
     use aptos_std::fungible_asset::{Metadata};
     #[view]

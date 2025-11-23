@@ -1,3 +1,3 @@
-module hyperion::i32{
+module hyperion_dex::i32{
     struct I32{}
 }

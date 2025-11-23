@@ -1,4 +1,4 @@
-module hyperion::pool_v3{
+module hyperion_dex::pool_v3{
     use aptos_std::fungible_asset::{FungibleAsset};
     use aptos_std::object::Object;
     struct LiquidityPoolV3 has key{}

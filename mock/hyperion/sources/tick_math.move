@@ -1,5 +1,5 @@
-module hyperion::tick_math{
-    use hyperion::i32;
+module hyperion_dex::tick_math{
+    use hyperion_dex::i32;
     public fun max_sqrt_price(): u128 {
         1
     }
