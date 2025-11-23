@@ -1,1 +1,1 @@
-aptos move publish --included-artifacts none 
+aptos move publish --included-artifacts none  --assume yes
