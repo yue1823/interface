@@ -2,6 +2,7 @@ module hyperion_dex::pool_v3{
     use aptos_std::fungible_asset::{FungibleAsset,Metadata};
     use aptos_std::object::{Object,Self};
     use hyperion_dex::position_v3;
+    use hyperion_dex::i32::I32;
     struct LiquidityPoolV3 has key{}
     const TICK_SPACING_VEC: vector<u32> = vector[1, 10, 60, 200, 20, 50];
     public fun swap(
@@ -55,6 +56,28 @@ module hyperion_dex::pool_v3{
     public fun liquidity_pool(
         _token_a: Object<Metadata>, _token_b: Object<Metadata>, _fee_tier: u8
     ): Object<LiquidityPoolV3>{
+        abort 1
+    }
+
+    #[view]
+    public fun current_tick_and_price(_pool_address: address): (u32, u128){
+        (1,1)
+    }
+    #[view]
+    public fun current_price(
+        _arg0: Object<Metadata>, _arg1: Object<Metadata>, _arg2: u8
+    ): u128{
+        (1)
+    }
+    public fun current_tick(
+        _arg0: Object<Metadata>, _arg1: Object<Metadata>, _arg2: u8
+    ): I32{
+        abort 1
+    }
+    #[view]
+    public fun pool_next_initialize_tick(
+        _arg0: Object<LiquidityPoolV3>, _arg1: bool
+    ): (I32, bool){
         abort 1
     }
 }
