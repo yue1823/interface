@@ -3,6 +3,7 @@ module hyperion_dex::pool_v3{
     use aptos_std::object::{Object,Self};
     use hyperion_dex::position_v3;
     struct LiquidityPoolV3 has key{}
+    const TICK_SPACING_VEC: vector<u32> = vector[1, 10, 60, 200, 20, 50];
     public fun swap(
         _pool: Object<LiquidityPoolV3>,
         _a2b: bool,
@@ -31,5 +32,23 @@ module hyperion_dex::pool_v3{
         _pool: Object<LiquidityPoolV3>, _from: Object<Metadata>, _amount: u64
     ): (u64, u64){
         (1,1)
+    }
+    #[view]
+    public fun get_pool_liquidity(_pool: Object<LiquidityPoolV3>): u128{
+        1
+    }
+
+    #[view]
+    public fun liquidity_pool_address(
+        _token_a: Object<Metadata>, _token_b: Object<Metadata>, _fee_tier: u8
+    ): address{
+       @0xa 
+    }
+
+    #[view]
+    public fun liquidity_pool(
+        _token_a: Object<Metadata>, _token_b: Object<Metadata>, _fee_tier: u8
+    ): Object<LiquidityPoolV3>{
+        abort 1
     }
 }
