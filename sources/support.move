@@ -12,7 +12,7 @@ module support::support{
         }else if(token == utf8(b"weth")){
             return @0x548cf587bd918a0005b3372a1d23e64b18ace3c61962f087a21eac52cf228504
         }else if(token == utf8(b"usdt")){
-            return @0x357b0b74bc833e95a115ad22604854d6b0fca151cecd94111770e5d6ffc9dc2b
+            return @0xac00e90cdadec06d81e0d5ce7a3e93d63d563e982dea0ca15bad2b067f42d2be
         }else if(token == utf8(b"usdc")){
             return @0x2c4e0bb55272f9c120ffd5a414c10244005caf9c1b14527cea3df7074c5bf623
         }else{
