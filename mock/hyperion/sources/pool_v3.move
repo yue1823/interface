@@ -37,6 +37,12 @@ module hyperion_dex::pool_v3{
     public fun get_pool_liquidity(_pool: Object<LiquidityPoolV3>): u128{
         1
     }
+    #[view]
+    public fun liquidity_pool_address_safe(
+        _token_a: Object<Metadata>, _token_b: Object<Metadata>, _fee_tier: u8
+    ): (bool, address){
+        (false,@0xa)
+    }
 
     #[view]
     public fun liquidity_pool_address(
