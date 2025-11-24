@@ -3,6 +3,7 @@ module hyperion_dex::pool_v3{
     use aptos_std::object::{Object,Self};
     use hyperion_dex::position_v3;
     use hyperion_dex::i32::I32;
+    use hyperion_dex::rewarder;
     struct LiquidityPoolV3 has key{}
     const TICK_SPACING_VEC: vector<u32> = vector[1, 10, 60, 200, 20, 50];
     public fun swap(
@@ -79,5 +80,17 @@ module hyperion_dex::pool_v3{
         _arg0: Object<LiquidityPoolV3>, _arg1: bool
     ): (I32, bool){
         abort 1
+    }
+
+    #[view]
+    public fun get_pending_rewards(
+        _position: Object<position_v3::Info>
+    ): vector<rewarder::PendingReward> {
+        vector[]
+    }
+
+    #[view]
+    public fun get_pending_fees(_position: Object<position_v3::Info>): vector<u64> {
+        vector[]
     }
 }
