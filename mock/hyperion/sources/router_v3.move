@@ -46,4 +46,10 @@ module hyperion_dex::router_v3 {
     ): (u128, u64, u64) {
         (0, 0, 0)
     }
+    #[view]
+    public fun get_amount_by_liquidity(
+        _position: Object<position_v3::Info>
+    ): (u64, u64){
+        (1,1)
+    }
 }
