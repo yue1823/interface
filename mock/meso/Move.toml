@@ -1,0 +1,11 @@
+[package]
+name = 'meso'
+version = '1.0.0'
+
+[addresses]
+deployer = "0x9098c52bd2c9b473647ce754adf3388663c2dba72f66f4778ae57a067b27bf33"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"

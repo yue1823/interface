@@ -9,6 +9,15 @@ thalaswap_v2 = "0x7730cd28ee1cdc9e999336cbc430f99e7c44397c0aa77516f6f23a78559bb5
 hyperion_dex="0x8b4a2c4bb53857c718a04c020b98f8c2e1f99a68b0f57389a8bf5434cd22e05c"
 echelon = "0xc6bc659f1649553c1a3fa05d9727433dc03843baac29473c817d06d39e7621ba"
 lending_deployer = "0x11e7cb3888628fa1ddf21b95e39d2e8104a60293b15536568d8a356b4cb2aeb2"
+#thala oracle
+staked_lpt_oracle = "ff9c14f0ab345b7804388d93401f5f0651f29dff7082bf386eea9b7a695c769e"
+staked_lpt_oracle_deployer = "0x1bf23f0881f8fa149500ff6b7a047f608967c028a8ad7a2100caa84833ce851d"
+#pyth oracle
+pyth ="0x7e783b349d3e89cf5931af376ebeadbfab855b3fa239b7ada8f5a92fbea6b387"
+
+#meso
+meso = "0x68476f9d437e3f32fd262ba898b5e3ee0a23a1d586a6cf29a28add35f253f6f7"
+treasury = "0x6284fc4630cbb7eb28c05a67659c8b71964694b20492525ff7e55deee16e15eb"
 [dev-addresses]
 
 [dependencies.AptosFramework]
@@ -22,4 +31,6 @@ local="./mock/thala"
 local ="./mock/echelon"
 [dependencies.dex]
 local="./mock/hyperion"
+[dependencies.StakedLPTOracle]
+local="./mock/thala_oracle"
 [dev-dependencies]
