@@ -33,4 +33,6 @@ local ="./mock/echelon"
 local="./mock/hyperion"
 [dependencies.StakedLPTOracle]
 local="./mock/thala_oracle"
+[dependencies.meso]
+local="./mock/meso"
 [dev-dependencies]
