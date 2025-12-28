@@ -42,4 +42,6 @@ local="./mock/meso"
 local="./mock/thala_clmm"
 [dependencies.ThalaSwap]
 local="./mock/thala_weight"
+[dependencies.Tap]
+local="./mock/tapp"
 [dev-dependencies]

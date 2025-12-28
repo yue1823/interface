@@ -1,0 +1,10 @@
+[package]
+name = "Tap"
+version = "1.0.0"
+upgrade_policy = "compatible"
+
+[addresses]
+tapp = "0x83790407e2d93336ea8d1101a6405582eec68816bc2d5b5513318e78497331fb"
+# tapp = "0x0e81f1e89ab38e59976b2ea155196da668991473f02f83c70c1abfb86205678e" # dev
+# tapp = "0xd32e6ce3789e21aac32f8a7623994681f7235eac9f6d323ff0277295a9364b88" # stg
+# tapp = "0x83790407e2d93336ea8d1101a6405582eec68816bc2d5b5513318e78497331fb" # prod
