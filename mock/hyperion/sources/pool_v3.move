@@ -117,4 +117,11 @@ module hyperion_dex::pool_v3{
     public fun get_fee_rate(_fee_tier: u8): u64 {
         1
     }
+
+    #[view]
+    public fun pool_reserve_amount(
+        _pool_id: Object<LiquidityPoolV3>
+    ): (u64, u64){
+        (1,1)
+    }
 }
