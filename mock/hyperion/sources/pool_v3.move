@@ -120,4 +120,8 @@ module hyperion_dex::pool_v3{
     ): (u64, u64){
         (1,1)
     }
+    #[view]
+    public fun get_protocol_fee_rate(_pool: Object<LiquidityPoolV3>): u64{
+        1
+    }
 }
