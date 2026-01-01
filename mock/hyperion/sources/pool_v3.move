@@ -4,6 +4,7 @@ module hyperion_dex::pool_v3{
     use hyperion_dex::position_v3;
     use hyperion_dex::i32::I32;
     use hyperion_dex::rewarder;
+    use hyperion_dex::tick::TickInfo;
     struct LiquidityPoolV3 has key{}
     const TICK_SPACING_VEC: vector<u32> = vector[1, 10, 60, 200, 20, 50];
     public fun swap(
@@ -92,5 +93,28 @@ module hyperion_dex::pool_v3{
     #[view]
     public fun get_pending_fees(_position: Object<position_v3::Info>): vector<u64> {
         vector[]
+    }
+
+    #[view]
+    public fun supported_inner_assets(
+        _pool: Object<LiquidityPoolV3>
+    ): vector<Object<Metadata>>{
+        vector[]
+    }
+
+    #[view]
+    public fun get_pool_liquidity(_pool: Object<LiquidityPoolV3>): u128{
+        1
+    }
+
+    #[view]
+    public fun get_pool_tick_info_batch(
+        _pool_obj: Object<LiquidityPoolV3>, _ticks_u32: vector<u32>
+    ): vector<TickInfo>{
+        vector[]
+    }
+     #[view]
+    public fun get_fee_rate(_fee_tier: u8): u64 {
+        1
     }
 }
