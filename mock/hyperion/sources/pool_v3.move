@@ -102,10 +102,6 @@ module hyperion_dex::pool_v3{
         vector[]
     }
 
-    #[view]
-    public fun get_pool_liquidity(_pool: Object<LiquidityPoolV3>): u128{
-        1
-    }
 
     #[view]
     public fun get_pool_tick_info_batch(
