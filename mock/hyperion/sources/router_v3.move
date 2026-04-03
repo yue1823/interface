@@ -8,6 +8,27 @@ module hyperion_dex::router_v3 {
         _arg0: &signer, _arg1: vector<address>, _arg2: address
     ) {
     }
+ public entry fun add_liquidity(
+        lp: &signer,
+        lp_object: Object<position_v3::Info>,
+        token_a: Object<Metadata>,
+        token_b: Object<Metadata>,
+        fee_tier: u8,
+        amount_a_desired: u64,
+        amount_b_desired: u64,
+        amount_a_min: u64,
+        amount_b_min: u64,
+        deadline: u64
+    ) {}
+public entry fun remove_liquidity(
+        lp: &signer,
+        lp_object: Object<position_v3::Info>,
+        liquidity_delta: u128,
+        amount_a_min: u64,
+        amount_b_min: u64,
+        recipient: address,
+        _deadline: u64
+    ) {}
     public fun add_liquidity_by_contract(
             _lp: &signer,
             _lp_object: Object<position_v3::Info>,
