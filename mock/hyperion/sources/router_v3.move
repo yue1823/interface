@@ -8,6 +8,15 @@ module hyperion_dex::router_v3 {
         _arg0: &signer, _arg1: vector<address>, _arg2: address
     ) {
     }
+public entry fun swap_batch(
+        user: &signer,
+        lp_path: vector<address>,
+        from_token: Object<Metadata>,
+        to_token: Object<Metadata>,
+        amount_in: u64,
+        amount_out_min: u64,
+        recipient: address
+    ) {}
  public entry fun add_liquidity(
         lp: &signer,
         lp_object: Object<position_v3::Info>,
