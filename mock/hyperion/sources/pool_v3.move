@@ -18,7 +18,10 @@ module hyperion_dex::pool_v3{
        abort 1 
     }
 
-
+#[view]
+    public fun get_amount_in(
+        pool: Object<LiquidityPoolV3>, from: Object<Metadata>, amount: u64
+    ): (u64, u64){(1,1)}
     public fun open_position(
         _user: &signer,
         _token_a: Object<Metadata>,
