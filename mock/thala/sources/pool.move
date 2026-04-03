@@ -36,5 +36,20 @@ module thalaswap_v2::pool {
     ): FungibleAsset {
         arg2
     }
+
+    struct Flashloan {
+        pool_obj: Object<Pool>,
+        amounts: vector<u64>
+    }
+
+    public fun flashloan(p0: Object<Pool>, p1: vector<u64>):
+        (vector<FungibleAsset>, Flashloan)
+    {
+        (vector[], Flashloan { pool_obj: p0, amounts: p1 })
+    }
+    public fun pay_flashloan(p0: vector<FungibleAsset>, p1: Flashloan){
+        p0.destroy_empty();
+        let Flashloan{pool_obj: _v4, amounts: _v5} = p1;
+    }
 }
 
